@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
 
-# Stop the running container (if any)
-echo "Hi"
+# Stop all running containers
+echo "Stopping all running containers..."
+docker stop $(docker ps -q)
